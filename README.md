@@ -1,2 +1,2 @@
-# unitvectorj.github.io
-WIP personal site
+# personal-site
+WIP personal website
