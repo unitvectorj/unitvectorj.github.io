@@ -60,6 +60,7 @@ p {
     */
     background: #111111;
     margin-bottom:64px;
+    overflow: hidden
     
 }
 .skill-row {
