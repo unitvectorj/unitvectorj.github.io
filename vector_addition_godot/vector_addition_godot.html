@@ -2,6 +2,13 @@
 <html lang="en">
 	<head>
 		<script>
+			if (/Mobi|Android/i.test(navigator.userAgent)) {
+				document.addEventListener('DOMContentLoaded', function() {
+					document.body.innerHTML = '<div style="display:flex; justify-content:center; align-items:center; height:100vh; background:#111; color:#fff; font-family:sans-serif; font-size:1.5em; text-align:center; padding:20px;">This app is designed for desktop computers. Please access it from a laptop or desktop browser.</div>';
+				});
+			}
+		</script>
+		<script>
 			if (!window.crossOriginIsolated && !sessionStorage.getItem('reloaded')) {
 				sessionStorage.setItem('reloaded', 'true');
         		location.reload();
