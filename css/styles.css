@@ -65,12 +65,26 @@ p {
 }
 .skill-row {
     position: relative;
-    text-align: auto;
     font-weight: bold;
-    margin-top:120px;
+    margin-top:80px;
+    margin-bottom:80px;
     left : 15%;
     width: 70%;
-    height:240px;
+    height: 360px;
+    display:flex;
+    align-items:center;
+}
+
+.skill-row a {
+    display: contents;
+}
+
+.skill-row-reverse {
+    flex-direction: row-reverse;
+}
+.skill-text {
+    /*margin-top:160px;*/
+    text-align: center;
 }
 
 .bottom-container {
@@ -80,6 +94,15 @@ p {
     text-align:center;
     background: #111111;
 }
+
+
+.skill-image{
+    width: 30%;
+    margin: 30px;
+    border-radius: 20%;
+    position: relative;
+}
+
 
 
 /*********** IDS ***********/
@@ -102,20 +125,4 @@ p {
     left: 5%;
     width:64%;
     z-index:0;
-}
-
-.skill-image-left {
-    width: 20%;
-    float: left;
-    margin: 30px;
-    border-radius: 20%;
-    position: relative;
-}
-
-.skill-image-right {
-    width: 20%;
-    float: right;
-    margin: 30px;
-    border-radius: 20%;
-    position: relative;
 }
